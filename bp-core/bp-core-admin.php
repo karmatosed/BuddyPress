@@ -427,11 +427,24 @@ class BP_Admin {
 			<h1><?php printf( __( 'Welcome to BuddyPress %s', 'buddypress' ), $display_version ); ?></h1>
 			<div class="about-text">
 				<?php if ( $is_new_install ) : ?>
-					<?php printf( __( 'It&#8217;s a great time to use BuddyPress! This latest version introduces a new Notifications component, and is filled to the brim with three new widgets, support for BuddyPress links in nav menus, and tons of enhancements and bug fixes. Find out more below.', 'buddypress' ) ); ?>
+				<?php printf( __( 'It&#8217;s a great time to use BuddyPress! BuddyPress %s is our first version with a new component since version 1.5. Not only that there are other new features and tons of enhancements and bug fixes. Check out the highlights below!', 'buddypress' ), $display_version ); ?>
 				<?php else : ?>
-					<?php printf( __( 'Thanks for updating! BuddyPress %s introduces a new Notifications component, and is filled to the brim with three new widgets, support for BuddyPress links in nav menus, and tons of enhancements and bug fixes. Dive into the details below.', 'buddypress' ), $display_version ); ?>
+					<?php printf( __( 'Thanks for updating! BuddyPress %s is our first version with a new component since version 1.5. Not only that there are other new features and tons of enhancements and bug fixes. Check out the highlights below!', 'buddypress' ), $display_version ); ?>
 				<?php endif; ?>
 			</div>
+
+			<div class="changelog">
+				<h3><?php _e( 'Highlights of BuddyPress 1.9', 'buddypress' ); ?></h3>
+
+				<ul>
+					<li><strong><?php _e( 'New dynamic BuddyPress links for nav menus', 'buddypress' ); ?></strong></li>
+					<li><strong><?php _e( 'New Notifications Component', 'buddypress' ); ?></strong></li>
+					<li><strong><?php _e( 'New widgets', 'buddypress' ); ?></strong></li>
+				<ul>
+
+				<h4><?php _e( 'x tickets fixed', 'buddypress' ); ?></h4>
+			</div>
+
 			<div class="bp-badge"><?php printf( __( 'Version %s', 'buddypress' ), $display_version ); ?></div>
 
 			<h2 class="nav-tab-wrapper">
@@ -470,19 +483,6 @@ class BP_Admin {
 				</div>
 
 			<?php endif; ?>
-
-			<div class="changelog">
-				<h3><?php _e( 'Highlights of BuddyPress 1.9', 'buddypress' ); ?></h3>
-
-				<ul>
-					<li><strong><?php _e( 'New dynamic BuddyPress links for nav menus', 'buddypress' ); ?></strong></li>
-					<li><strong><?php _e( 'New Notifications Component', 'buddypress' ); ?></strong></li>
-					<li><strong><?php _e( 'New widgets', 'buddypress' ); ?></strong></li>
-				<ul>
-
-				<h4><?php _e( 'x tickets fixed', 'buddypress' ); ?></h4>
-			</div>
-
 
 			<hr />
 			<div class="changelog">
