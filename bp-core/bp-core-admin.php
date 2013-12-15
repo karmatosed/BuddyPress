@@ -507,9 +507,9 @@ class BP_Admin {
 
 				<div class="feature-section">
 					<ul>
-						<li><?php _e( '<strong>Friends Widget</strong>; a list of recently active, popular, and newest friends of the displayed member.', 'buddypress' ); ?></li>
-						<li><?php _e( '<strong>Log In Widget</strong>; adds a simple &ldquo;Log In&rdquo; form to your site.', 'buddypress' ); ?></li>
-						<li><?php _e( '<strong>Sitewide Notices Widget</strong>; display Sitewide Notices from the Private Messaging component.', 'buddypress' ); ?></li>
+						<li><?php _e( '<strong>Friends Widget</strong>: a list of recently active, popular, and newest friends of the displayed member.', 'buddypress' ); ?></li>
+						<li><?php _e( '<strong>Log In Widget</strong>: adds a simple &ldquo;Log In&rdquo; form to your site.', 'buddypress' ); ?></li>
+						<li><?php _e( '<strong>Sitewide Notices Widget</strong>: display Sitewide Notices from the Private Messaging component.', 'buddypress' ); ?></li>
 					</ul>
 				</div>
 			</div>
