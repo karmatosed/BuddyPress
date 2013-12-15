@@ -441,8 +441,6 @@ class BP_Admin {
 					<li><strong><?php _e( 'Notifications have been moved into their own component.', 'buddypress' ); ?></strong></li>
 					<li><strong><?php _e( 'Three new widgets, allowing easier site customization.', 'buddypress' ); ?></strong></li>
 				<ul>
-
-				<h4><?php _e( 'x tickets fixed', 'buddypress' ); ?></h4>
 			</div>
 
 			<div class="bp-badge"><?php printf( __( 'Version %s', 'buddypress' ), $display_version ); ?></div>
