@@ -437,9 +437,9 @@ class BP_Admin {
 				<h3><?php _e( 'Check out the highlights of BuddyPress 1.9', 'buddypress' ); ?></h3>
 
 				<ul>
-					<li><strong><?php _e( 'New dynamic BuddyPress links for nav menus', 'buddypress' ); ?></strong></li>
-					<li><strong><?php _e( 'New Notifications Component', 'buddypress' ); ?></strong></li>
-					<li><strong><?php _e( 'New widgets', 'buddypress' ); ?></strong></li>
+					<li><strong><?php _e( 'You can now add dynamic BuddyPress links to custom navigation menus.', 'buddypress' ); ?></strong></li>
+					<li><strong><?php _e( 'Notifications have been moved into their own component.', 'buddypress' ); ?></strong></li>
+					<li><strong><?php _e( 'Three new widgets, allowing easier site customization.', 'buddypress' ); ?></strong></li>
 				<ul>
 
 				<h4><?php _e( 'x tickets fixed', 'buddypress' ); ?></h4>
