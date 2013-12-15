@@ -427,14 +427,14 @@ class BP_Admin {
 			<h1><?php printf( __( 'Welcome to BuddyPress %s', 'buddypress' ), $display_version ); ?></h1>
 			<div class="about-text">
 				<?php if ( $is_new_install ) : ?>
-				<?php printf( __( 'It&#8217;s a great time to use BuddyPress! BuddyPress %s is our first version with a new component since version 1.5. Not only that there are other new features and tons of enhancements and bug fixes. Check out the highlights below!', 'buddypress' ), $display_version ); ?>
+				<?php printf( __( 'It&#8217;s a great time to use BuddyPress! BuddyPress %s is our first version with a new component since version 1.5. Not only that there are other new features, enhancements and bug fixes.', 'buddypress' ), $display_version ); ?>
 				<?php else : ?>
-					<?php printf( __( 'Thanks for updating! BuddyPress %s is our first version with a new component since version 1.5. Not only that there are other new features and tons of enhancements and bug fixes. Check out the highlights below!', 'buddypress' ), $display_version ); ?>
+					<?php printf( __( 'Thanks for updating! BuddyPress %s is our first version with a new component since version 1.5. Not only that there are other new features, enhancements and bug fixes.', 'buddypress' ), $display_version ); ?>
 				<?php endif; ?>
 			</div>
 
 			<div class="changelog">
-				<h3><?php _e( 'Highlights of BuddyPress 1.9', 'buddypress' ); ?></h3>
+				<h3><?php _e( 'Check out the highlights of BuddyPress 1.9', 'buddypress' ); ?></h3>
 
 				<ul>
 					<li><strong><?php _e( 'New dynamic BuddyPress links for nav menus', 'buddypress' ); ?></strong></li>
