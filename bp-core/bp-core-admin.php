@@ -475,9 +475,9 @@ class BP_Admin {
 				<h3><?php _e( 'Highlights of BuddyPress 1.9', 'buddypress' ); ?></h3>
 
 				<ul>
+					<li><strong><?php _e( 'New dynamic BuddyPress links for nav menus', 'buddypress' ); ?></strong></li>
 					<li><strong><?php _e( 'New Notifications Component', 'buddypress' ); ?></strong></li>
 					<li><strong><?php _e( 'New widgets', 'buddypress' ); ?></strong></li>
-					<li><strong><?php _e( 'New dynamic BuddyPress links for nav menus', 'buddypress' ); ?></strong></li>
 					<li><strong><?php _e( 'Improvements in schedule post handling', 'buddypress' ); ?></strong></li>
 				<ul>
 
@@ -485,6 +485,18 @@ class BP_Admin {
 			</div>
 
 
+			<hr />
+			<div class="changelog">
+				<h3><?php _e( 'Dynamic BuddyPress links for nav menus', 'buddypress' ); ?></h3>
+
+				<div class="feature-section">
+					<h4><?php _e( 'Add BuddyPress specific links to your menus with ease!', 'buddypress' ); ?></h4>
+
+					<p><?php _e( 'Easily add links for nav menus through Dashboard > Appearance > Menus.', 'buddypress' ); ?></p>
+				</div>
+			</div>
+
+			<hr />
 			<div class="changelog">
 				<h3><?php _e( 'Notifications Component', 'buddypress' ); ?></h3>
 
@@ -497,6 +509,7 @@ class BP_Admin {
 				</div>
 			</div>
 
+			<hr />
 			<div class="changelog">
 				<h3><?php _e( 'Widgets', 'buddypress' ); ?></h3>
 
@@ -509,16 +522,7 @@ class BP_Admin {
 				</div>
 			</div>
 
-			<div class="changelog">
-				<h3><?php _e( 'Dynamic BuddyPress links for nav menus', 'buddypress' ); ?></h3>
-
-				<div class="feature-section">
-					<h4><?php _e( 'Add BuddyPress specific links to your menus with ease!', 'buddypress' ); ?></h4>
-
-					<p><?php _e( 'Easily add links for nav menus through Dashboard > Appearance > Menus.', 'buddypress' ); ?></p>
-				</div>
-			</div>
-
+			<hr />
 			<div class="changelog">
 				<h3><?php _e( 'Improvements in schedule post handling', 'buddypress' ); ?></h3>
 
@@ -527,6 +531,7 @@ class BP_Admin {
 				</div>
 			</div>
 
+			<hr />
 			<div class="changelog">
 				<h3><?php _e( 'Under the Hood', 'buddypress' ); ?></h3>
 
