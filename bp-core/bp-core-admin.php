@@ -478,7 +478,6 @@ class BP_Admin {
 					<li><strong><?php _e( 'New dynamic BuddyPress links for nav menus', 'buddypress' ); ?></strong></li>
 					<li><strong><?php _e( 'New Notifications Component', 'buddypress' ); ?></strong></li>
 					<li><strong><?php _e( 'New widgets', 'buddypress' ); ?></strong></li>
-					<li><strong><?php _e( 'Improvements in schedule post handling', 'buddypress' ); ?></strong></li>
 				<ul>
 
 				<h4><?php _e( 'x tickets fixed', 'buddypress' ); ?></h4>
