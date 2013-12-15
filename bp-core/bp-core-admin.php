@@ -429,7 +429,7 @@ class BP_Admin {
 				<?php if ( $is_new_install ) : ?>
 					<?php printf( __( 'BuddyPress %s is our first version with a new component since version 1.5.', 'buddypress' ), $display_version ); ?>
 				<?php else : ?>
-					<?php printf( __( 'Thank you for updating! BuddyPress %s is our first version with a new component since version 1.5.', 'buddypress' ), $display_version ); ?>
+					<?php printf( __( 'Thanks for updating! BuddyPress %s introduces a new Notifications component, and is filled to the brim with three new widgets, support for BuddyPress links in nav menus, and tons of enhancements and bug fixes. Dive into the details below:', 'buddypress' ), $display_version ); ?>
 				<?php endif; ?>
 			</div>
 			<div class="bp-badge"><?php printf( __( 'Version %s', 'buddypress' ), $display_version ); ?></div>
