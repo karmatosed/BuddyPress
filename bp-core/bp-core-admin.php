@@ -484,24 +484,19 @@ class BP_Admin {
 
 			<hr />
 			<div class="changelog">
-				<h3><?php _e( 'Dynamic BuddyPress links for nav menus', 'buddypress' ); ?></h3>
+				<h3><?php _e( 'Dynamic links for custom navigation menus', 'buddypress' ); ?></h3>
 
 				<div class="feature-section">
-					<h4><?php _e( 'Add BuddyPress specific links to your menus with ease!', 'buddypress' ); ?></h4>
-
-					<p><?php _e( 'Easily add links for nav menus through Dashboard &gt; Appearance &gt; Menus.', 'buddypress' ); ?></p>
+					<p><?php printf( __( 'It&#8217;s now easy to add BuddyPress-specific links to your menus through <a href="%s">Appearance &gt; Menus</a>. For example, you can now add a link to a specific user profile screen, and each person will end up at that screen inside their own user profile.', 'buddypress' ), admin_url( 'nav-menus.php' ) ); ?></p>
 				</div>
 			</div>
 
 			<hr />
 			<div class="changelog">
-				<h3><?php _e( 'Notifications Component', 'buddypress' ); ?></h3>
+				<h3><?php _e( 'Notifications component', 'buddypress' ); ?></h3>
 
 				<div class="feature-section">
-					<h4><?php _e( 'A new bp-notifications component', 'buddypress' ); ?></h4>
-
-					NOTE: some dynamic link to component here ?
-					<p><?php _e( 'Keep members abreast of the latest connections and @mentions within the site via email notifications and BP notifications in the WP Toolbar.', 'buddypress' ); ?></p>
+					<p><?php _e( 'The notification features have been promoted into a new component. Use it to keep your site&#8217;s members abreast of the latest connections and @mentions within the site, via email notifications and Toolbar alerts.', 'buddypress' ); ?></p>
 
 				</div>
 			</div>
@@ -512,31 +507,22 @@ class BP_Admin {
 
 				<div class="feature-section">
 					<ul>
-						<li><?php _e( 'Friends Widget', 'buddypress' ); ?></li>
-						<li><?php _e( 'Log In Widget', 'buddypress' ); ?></li>
-						<li><?php _e( 'Sitewide Notices Widget', 'buddypress' ); ?></li>
+						<li><?php _e( '<strong>Friends Widget</strong>; a list of recently active, popular, and newest friends of the displayed member.', 'buddypress' ); ?></li>
+						<li><?php _e( '<strong>Log In Widget</strong>; adds a simple &ldquo;Log In&rdquo; form to your site.', 'buddypress' ); ?></li>
+						<li><?php _e( '<strong>Sitewide Notices Widget</strong>; display Sitewide Notices from the Private Messaging component.', 'buddypress' ); ?></li>
 					</ul>
 				</div>
 			</div>
 
 			<hr />
 			<div class="changelog">
-				<h3><?php _e( 'Improvements in schedule post handling', 'buddypress' ); ?></h3>
-
-				<div class="feature-section">
-					<p><?php _e( 'There are now improvements in the way that scheduled posts are handled in the Activity stream.', 'buddypress' ); ?></p>
-				</div>
-			</div>
-
-			<hr />
-			<div class="changelog">
-				<h3><?php _e( 'Under the Hood', 'buddypress' ); ?></h3>
+				<h3><?php _e( 'Developer changes', 'buddypress' ); ?></h3>
 
 				<div class="feature-section">
 					<ul>
-						<li><?php _e( 'Reinstates bp_redirect_canonical functionality', 'buddypress' ); ?></li>
+						<li><?php _e( '<code>bp_redirect_canonical()</code> functionality has been reinstated', 'buddypress' ); ?></li>
 						<li><?php _e( 'Improved phpDoc inline documentation', 'buddypress' ); ?></li>
-						<li><?php _e( 'Improved compatibility with develop.svn.wordpress.org unit-test suite', 'buddypress' ); ?></li>
+						<li><?php printf( __( 'Improved compatibility with <a href="%s">develop.svn.wordpress.org</a> unit-test suite', 'buddypress' ), 'https://develop.svn.wordpress.org/' ); ?></li>
 					</ul>
 				</div>
 
