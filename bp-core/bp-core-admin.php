@@ -492,7 +492,7 @@ class BP_Admin {
 				<div class="feature-section">
 					<h4><?php _e( 'Add BuddyPress specific links to your menus with ease!', 'buddypress' ); ?></h4>
 
-					<p><?php _e( 'Easily add links for nav menus through Dashboard > Appearance > Menus.', 'buddypress' ); ?></p>
+					<p><?php _e( 'Easily add links for nav menus through Dashboard &gt; Appearance &gt; Menus.', 'buddypress' ); ?></p>
 				</div>
 			</div>
 
