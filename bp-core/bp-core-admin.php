@@ -427,9 +427,9 @@ class BP_Admin {
 			<h1><?php printf( __( 'Welcome to BuddyPress %s', 'buddypress' ), $display_version ); ?></h1>
 			<div class="about-text">
 				<?php if ( $is_new_install ) : ?>
-					<?php printf( __( 'BuddyPress %s is our safest, fastest, most flexible version ever.', 'buddypress' ), $display_version ); ?>
+					<p><?php printf( __( 'BuddyPress %s is our first version with a new component since version 1.5.', 'buddypress' ), $display_version ); ?></p>
 				<?php else : ?>
-					<?php printf( __( 'Thank you for updating! BuddyPress %s is our safest, fastest, most flexible version ever.', 'buddypress' ), $display_version ); ?>
+					<?php printf( __( 'Thank you for updating! BuddyPress %s is our first version with a new component since version 1.5.', 'buddypress' ), $display_version ); ?>
 				<?php endif; ?>
 			</div>
 			<div class="bp-badge"><?php printf( __( 'Version %s', 'buddypress' ), $display_version ); ?></div>
@@ -472,60 +472,77 @@ class BP_Admin {
 			<?php endif; ?>
 
 			<div class="changelog">
-				<h3><?php _e( 'Improved Theme Integration', 'buddypress' ); ?></h3>
+				<h3><?php _e( 'Highlights of BuddyPress 1.9', 'buddypress' ); ?></h3>
+
+				<ul>
+					<li><strong><?php _e( 'New Notifications Component', 'buddypress' ); ?></strong></li>
+					<li><strong><?php _e( 'New widgets', 'buddypress' ); ?></strong></li>
+					<li><strong><?php _e( 'New dynamic BuddyPress links for nav menus', 'buddypress' ); ?></strong></li>
+					<li><strong><?php _e( 'Improvements in schedule post handling', 'buddypress' ); ?></strong></li>
+				<ul>
+
+				<h4><?php _e( 'x tickets fixed', 'buddypress' ); ?></h4>
+			</div>
+
+
+			<div class="changelog">
+				<h3><?php _e( 'Notifications Component', 'buddypress' ); ?></h3>
 
 				<div class="feature-section">
-					<h4><?php _e( 'Hey, Good Lookin&#8217;', 'buddypress' ); ?></h4>
-					<p><?php _e( 'We&#8217;ve streamlined our stylesheets, so that BuddyPress content looks more at home in your theme. And theme developers will love BP&#8217;s new hierarchies that make it easy to override specific top-level templates, stylesheets, and JavaScript files.', 'buddypress' ) ?></p>
+					<h4><?php _e( 'A new bp-notifications component', 'buddypress' ); ?></h4>
+
+					NOTE: some dynamic link to component here ?
+					<p><?php _e( 'Keep members abreast of the latest connections and @mentions within the site via email notifications and BP notifications in the WP Toolbar.', 'buddypress' ); ?></p>
+
 				</div>
 			</div>
 
 			<div class="changelog">
-				<h3><?php _e( 'Better Group Member Management', 'buddypress' ); ?></h3>
+				<h3><?php _e( 'Widgets', 'buddypress' ); ?></h3>
 
 				<div class="feature-section">
-					<h4><?php _e( '<em>Add</em>, <em>Remove</em>, and More, in a Snap', 'buddypress' ); ?></h4>
+					<ul>
+						<li><?php _e( 'Friends Widget', 'buddypress' ); ?></li>
+						<li><?php _e( 'Log In Widget', 'buddypress' ); ?></li>
+						<li><?php _e( 'Sitewide Notices Widget', 'buddypress' ); ?></li>
+					</ul>
+				</div>
+			</div>
 
-					<?php
-					$group_admin_text = __( 'Groups administration panel', 'buddypress' );
-					if ( bp_is_active( 'groups' ) ) {
-						$group_admin_text = '<a href="' . bp_get_admin_url( add_query_arg( array( 'page' => 'bp-groups' ), 'admin.php' ) ) . '">' . $group_admin_text . '</a>';
-					}
-					?>
+			<div class="changelog">
+				<h3><?php _e( 'Dynamic BuddyPress links for nav menus', 'buddypress' ); ?></h3>
 
-					<p><?php printf(
-						__( 'The Manage Members section of the %s has been rewritten, to make it easier to handle groups with many members. We&#8217;ve also made the interface nicer to use, to ensure that you don&#8217;t make changes and then forget to save them.', 'buddypress' ),
-						$group_admin_text
-					); ?></p>
+				<div class="feature-section">
+					<h4><?php _e( 'Add BuddyPress specific links to your menus with ease!', 'buddypress' ); ?></h4>
+
+					<p><?php _e( 'Easily add links for nav menus through Dashboard > Appearance > Menus.', 'buddypress' ); ?></p>
+				</div>
+			</div>
+
+			<div class="changelog">
+				<h3><?php _e( 'Improvements in schedule post handling', 'buddypress' ); ?></h3>
+
+				<div class="feature-section">
+					<p><?php _e( 'There are now improvements in the way that scheduled posts are handled in the Activity stream.', 'buddypress' ); ?></p>
 				</div>
 			</div>
 
 			<div class="changelog">
 				<h3><?php _e( 'Under the Hood', 'buddypress' ); ?></h3>
 
-				<div class="feature-section three-col">
-					<div>
-						<h4><?php _e( 'Superpowered Group Extensions', 'buddypress' ); ?></h4>
-						<p><?php _e( '<code>BP_Group_Extension</code> has been overhauled, making it easier than ever before to add custom functionality to groups.', 'buddypress' ); ?></p>
+				<div class="feature-section">
+					<ul>
+						<li><?php _e( 'Reinstates bp_redirect_canonical functionality', 'buddypress' ); ?></li>
+						<li><?php _e( 'Improved phpDoc inline documentation', 'buddypress' ); ?></li>
+						<li><?php _e( 'Improved compatibility with develop.svn.wordpress.org unit-test suite', 'buddypress' ); ?></li>
+					</ul>
+				</div>
 
-						<h4><?php _e( 'Filter Groups or Activity by Metadata', 'buddypress' ); ?></h4>
-						<p><?php _e( '<code>bp_has_groups()</code> and <code>bp_has_activities()</code> now accept a <code>meta_query</code> paramater, for more powerful directory queries.', 'buddypress' ); ?></p>
-					</div>
+				<div class="return-to-dashboard">
+					<a href="<?php echo esc_url( bp_get_admin_url( add_query_arg( array( 'page' => 'bp-components' ), $this->settings_page ) ) ); ?>"><?php _e( 'Go to the BuddyPress Settings page', 'buddypress' ); ?></a>
+				</div>
 
-					<div>
-						<h4><?php _e( 'Feed Me, Seymour', 'buddypress' ); ?></h4>
-						<p><?php _e( 'The new <code>BP_Activity_Feed</code> class centralizes BP&#8217;s RSS logic, making our feeds more standards-compliant, and giving developers more tools for building custom feeds.', 'buddypress' ); ?></p>
-
-						<h4><?php _e( 'Disable @-Mentions', 'buddypress' ); ?></h4>
-						<p><?php _e( "Not using @-mentions? Disable them with <code>add_filter( 'bp_activity_do_mentions', '__return_false' );</code>", 'buddypress' ); ?></p>
-					</div>
 			</div>
-
-			<div class="return-to-dashboard">
-				<a href="<?php echo esc_url( bp_get_admin_url( add_query_arg( array( 'page' => 'bp-components' ), $this->settings_page ) ) ); ?>"><?php _e( 'Go to the BuddyPress Settings page', 'buddypress' ); ?></a>
-			</div>
-
-		</div>
 
 		<?php
 	}
