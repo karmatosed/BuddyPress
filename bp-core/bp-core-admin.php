@@ -427,7 +427,7 @@ class BP_Admin {
 			<h1><?php printf( __( 'Welcome to BuddyPress %s', 'buddypress' ), $display_version ); ?></h1>
 			<div class="about-text">
 				<?php if ( $is_new_install ) : ?>
-					<p><?php printf( __( 'BuddyPress %s is our first version with a new component since version 1.5.', 'buddypress' ), $display_version ); ?></p>
+					<?php printf( __( 'BuddyPress %s is our first version with a new component since version 1.5.', 'buddypress' ), $display_version ); ?>
 				<?php else : ?>
 					<?php printf( __( 'Thank you for updating! BuddyPress %s is our first version with a new component since version 1.5.', 'buddypress' ), $display_version ); ?>
 				<?php endif; ?>
