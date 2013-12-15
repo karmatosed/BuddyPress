@@ -434,7 +434,7 @@ class BP_Admin {
 			</div>
 
 			<div class="changelog">
-				<h3><?php _e( 'Check out the highlights of BuddyPress 1.9', 'buddypress' ); ?></h3>
+				<h3><?php _e( 'Check out the highlights:', 'buddypress' ); ?></h3>
 
 				<ul>
 					<li><strong><?php _e( 'You can now add dynamic BuddyPress links to custom navigation menus.', 'buddypress' ); ?></strong></li>
